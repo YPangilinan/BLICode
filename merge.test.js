@@ -12,3 +12,7 @@ test('Value Error if string is null'), () =>{
     expect(parseInput(null)).toBeNull();
 }
 
+test('should merge into one array', () => {
+    const newString = "1-5, 2-10,1-10"
+    expect(parseInput(newString).toBe[ [ 1, 10 ] ])
+});
